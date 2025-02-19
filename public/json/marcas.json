@@ -1,7 +1,4 @@
-[
-{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"app_lubricentro"},
-{"type":"table","name":"marcas","database":"app_lubricentro","data":
+
 [
 {"id":"1","Marca":"SHELL"},
 {"id":"2","Marca":"CASTROL"},
@@ -25,5 +22,4 @@
 {"id":"20","Marca":"BOSH"},
 {"id":"21","Marca":"OTRO"}
 ]
-}
-]
+

@@ -1,7 +1,4 @@
-[
-{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"app_lubricentro"},
-{"type":"table","name":"medidas","database":"app_lubricentro","data":
+
 [
 {"id":"1","medida":"GALON"},
 {"id":"2","medida":"LITRO"},
@@ -13,6 +10,4 @@
 {"id":"8","medida":"ONZAS"},
 {"id":"9","medida":"UNIDAD"},
 {"id":"10","medida":"1\/4 GALON"}
-]
-}
 ]

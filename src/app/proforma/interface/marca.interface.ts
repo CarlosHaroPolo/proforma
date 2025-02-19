@@ -1,5 +1,12 @@
 
-export enum Marca {
+export interface marca{
+  id:string,
+  Marca: itemMarca
+}
+
+
+
+export enum itemMarca {
   Bosh = "BOSH",
   Boyl = "BOYL",
   Castrol = "CASTROL",

@@ -1,4 +1,10 @@
-export enum Medida {
+
+
+export interface medida {
+ id:string,
+ medida:itemMedida
+}
+export enum itemMedida {
   Balde = "BALDE",
   Cilindro = "CILINDRO",
   Galon = "GALON",
