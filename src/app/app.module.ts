@@ -14,7 +14,7 @@ import { ProformaModule } from './proforma/proforma.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    ProformaModule
+    ProformaModule,
 
   ],
   providers: [

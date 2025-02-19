@@ -9,7 +9,7 @@
 </header>
 
 <div class="row">
-  <div class="col-6  m-auto mt-2">
+  <div class="col-8  m-auto mt-2">
       <h1 class="text-center">PROFORMA</h1>
       <hr class="hr">
       <form action="">
@@ -30,105 +30,49 @@
 </div>
 
             <hr class="hr">
+
+            <!--OTRO COMPONENTE-->
            <h3>Buscar Producto</h3>
-           <div class="row">
-              <div class="col-3">
-                <select class="form-select" aria-label="Default select example" #marcaSelect>
-                  <option selected value="0">Marca</option>
-                  <option *ngFor="let marca of marcas" [value]="marca.Marca">{{marca.Marca}}</option>
-                </select>
-              </div>
-              <div class="col-3">
-                <select class="form-select"   aria-label="Default select example" #medidaSelect>
-                  <option selected value="0">Medida</option>
-                  <option *ngFor="let medida of medidas" [value]="medida.medida">{{medida.medida}}</option>
-                </select>
-              </div>
-              <div class="col-3 p-0">
-                <input type="text" class="form-control" #searchInput >
+           <shared-search-product></shared-search-product>
 
-              </div>
-              <div class="col-3">
-                  <button type="button" class="btn btn-warning" (click)="searchProduct(marcaSelect.value,medidaSelect.value,searchInput.value)">Buscar</button>
+          
+  <hr class="hr">
+  <h3>Productos Registrados</h3>
+  <div class="col-12">
+      <table class="table table-bordered border-primary ">
+          <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Precio/uni</th>
+                <th scope="col">Borrar</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <th scope="row">dasddadadsddasdasdasdasdaadas</th>
+                <td>Mark</td>
+                <td>sdad</td>
+                <td>
+                  <button type="button" class="btn btn-danger">X</button>
+              </td>
+              </tr>
 
-              </div>
-              <div class="col-12 my-3" style="background-color: red; height: 180px; overflow-x: auto; overflow-y: auto;">
-                  <table class="table table-bordered border-primary ">
-                      <thead>
-                          <tr>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Precio/uni</th>
-                            <th scope="col">Registrar</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                            <th scope="row">dasddadadsddasdasdasdasdaadas</th>
-                            <td>Mark</td>
-                            <td>
-                              <button type="button" class="btn btn-secondary">Secondary</button>
-                            </td>
-                          </tr>
-                          <tr>
-                              <th scope="row">dasddadadsddasdasdasdasdaadas</th>
-                              <td>Mark</td>
-                              <td>
-                                <button type="button" class="btn btn-secondary">Secondary</button>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">dasddadadsddasdasdasdasdaadas</th>
-                              <td>Mark</td>
-                              <td>
-                                <button type="button" class="btn btn-secondary">Secondary</button>
-                              </td>
-                            </tr>
+              <tr>
+                  <th scope="row">dasddadadsddasdasdasdasdaadas</th>
+                  <td>Mark</td>
+                  <td>sdad</td>
+                  <td>
+                    <button type="button" class="btn btn-danger">X</button>
+                </td>
+                </tr>
 
 
-                      </tbody>
-                  </table>
-              </div>
-              <hr class="hr">
-              <h3>Productos Registrados</h3>
-              <div class="col-12">
-                  <table class="table table-bordered border-primary ">
-                      <thead>
-                          <tr>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Cantidad</th>
-                            <th scope="col">Precio/uni</th>
-                            <th scope="col">Borrar</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                            <th scope="row">dasddadadsddasdasdasdasdaadas</th>
-                            <td>Mark</td>
-                            <td>sdad</td>
-                            <td>
-                              <button type="button" class="btn btn-danger">X</button>
-                          </td>
-                          </tr>
+          </tbody>
+      </table>
+  </div>
 
-                          <tr>
-                              <th scope="row">dasddadadsddasdasdasdasdaadas</th>
-                              <td>Mark</td>
-                              <td>sdad</td>
-                              <td>
-                                <button type="button" class="btn btn-danger">X</button>
-                            </td>
-                            </tr>
-
-
-                      </tbody>
-                  </table>
-              </div>
-           </div>
           </div>
-
-
-
-
           <button type="button" class="btn btn-primary my-3">Primary</button>
       </form>
 

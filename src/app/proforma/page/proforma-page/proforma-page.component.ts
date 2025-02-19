@@ -11,6 +11,7 @@ import { medida } from '../../interface/medida.interface';
 
 })
 export class ProformaPageComponent  implements OnInit{
+
   constructor(private serve: ProformaService) {
 
   }
@@ -25,6 +26,7 @@ export class ProformaPageComponent  implements OnInit{
   public products: product[] = []
   public marcas: marca[] = []
   public medidas: medida[] = []
+  public resultadoSearch :product[]=[]
 
   getProducts(): void {
     this.serve.getProducts().subscribe(
@@ -61,7 +63,7 @@ export class ProformaPageComponent  implements OnInit{
    if (searchInput !== '') {
      resultado = resultado.filter(product => product.name.includes(searchInput));
    }
-   console.log(resultado)
+    this.resultadoSearch =resultado
   }
 
 
