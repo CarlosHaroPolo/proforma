@@ -1,0 +1,18 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"app_lubricentro"},
+{"type":"table","name":"medidas","database":"app_lubricentro","data":
+[
+{"id":"1","medida":"GALON"},
+{"id":"2","medida":"LITRO"},
+{"id":"3","medida":"SACHET"},
+{"id":"4","medida":"BALDE"},
+{"id":"5","medida":"1\/2 BALDE"},
+{"id":"6","medida":"CILINDRO"},
+{"id":"7","medida":"BOTELLA"},
+{"id":"8","medida":"ONZAS"},
+{"id":"9","medida":"UNIDAD"},
+{"id":"10","medida":"1\/4 GALON"}
+]
+}
+]

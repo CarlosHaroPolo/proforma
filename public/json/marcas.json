@@ -1,0 +1,29 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"app_lubricentro"},
+{"type":"table","name":"marcas","database":"app_lubricentro","data":
+[
+{"id":"1","Marca":"SHELL"},
+{"id":"2","Marca":"CASTROL"},
+{"id":"3","Marca":"MOBIL"},
+{"id":"4","Marca":"PHILLIPS 66"},
+{"id":"5","Marca":"HYUNDAY"},
+{"id":"6","Marca":"GULF"},
+{"id":"7","Marca":"VISTONY"},
+{"id":"8","Marca":"VALVOLINE"},
+{"id":"9","Marca":"DELUXE"},
+{"id":"10","Marca":"KRAFT"},
+{"id":"11","Marca":"BOYL"},
+{"id":"12","Marca":"PRESTONE"},
+{"id":"13","Marca":"PEAK"},
+{"id":"14","Marca":"LIQUI-MOLY"},
+{"id":"15","Marca":"OTROS ACEITES"},
+{"id":"16","Marca":"LYZ"},
+{"id":"17","Marca":"PUROLATOR"},
+{"id":"18","Marca":"WILLY BUSH"},
+{"id":"19","Marca":"SAKURA"},
+{"id":"20","Marca":"BOSH"},
+{"id":"21","Marca":"OTRO"}
+]
+}
+]
