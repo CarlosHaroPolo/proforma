@@ -6,8 +6,9 @@ import { itemMedida } from "./medida.interface";
 
 export interface product {
   id:         string;
-  Marca:      itemMarca;
-  medida:     itemMedida;
+  Marca?:      itemMarca;
+  medida?:     itemMedida;
   name:       string;
   sale_price: string;
+  cantidad?:string
 }

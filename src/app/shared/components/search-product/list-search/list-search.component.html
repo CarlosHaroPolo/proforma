@@ -1,21 +1,26 @@
-<div class="col-12 my-3" style="background-color: red; height: 180px; overflow-x: auto; overflow-y: auto;">
+<div class="col-12 my-3" style="background-color: #cacfd2; height: 180px; overflow-x: auto; overflow-y: auto;">
   <table class="table table-bordered border-primary ">
       <thead>
           <tr>
             <th scope="col">Nombre</th>
             <th scope="col">Precio/uni</th>
+            <th scope="col">cantidad</th>
             <th scope="col">Registrar</th>
           </tr>
       </thead>
-<!--       <tbody> <tr *ngFor="let product of resultadoSearch">
+
+
+      <tbody> <tr *ngFor="let product of resultadoSearch">
        
           <th>{{product.name}}</th>
-          <th><input type="number"  class="form-control" [value]="product.sale_price" name="" id=""></th>
+          <th><input type="number"  class="form-control" [value]="product.sale_price" name="" id=""#inputSale></th>
+          <th><input type="number"  class="form-control" value="1" name="" id="" #inputCantidad></th>
           <td>
-            <button type="button" class="btn btn-success"><i class="bi bi-folder-plus"></i>
+            <button type="button" class="btn btn-success"   ><i class="bi bi-folder-plus" (click)="registrarProductSearch(product.name,inputSale.value,inputCantidad.value)"></i>
             </button>
           </td>
         </tr>
-      </tbody> -->
+      </tbody>
   </table>
 </div>
+

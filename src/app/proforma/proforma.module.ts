@@ -13,7 +13,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
   ],
   exports:[
     ProformaPageComponent

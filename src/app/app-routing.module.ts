@@ -5,8 +5,7 @@ import { ProformaPageComponent } from './proforma/page/proforma-page/proforma-pa
 const routes: Routes = [
   {
     path: '',
-    component: ProformaPageComponent,
-     pathMatch:'full'
+    component: ProformaPageComponent, 
   },
  {
     path:'**',

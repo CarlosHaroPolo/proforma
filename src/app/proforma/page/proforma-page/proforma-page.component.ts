@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { ProformaService } from '../../servers/proforma.service';
 import { marca } from '../../interface/marca.interface';
 import { medida } from '../../interface/medida.interface';
+import { componenteforSearch } from '../../interface/componente.interface';
 
-@Component({
-  selector: 'app-proforma-page',
+@Component({  selector: 'app-proforma-page',
   standalone: false,
   templateUrl: './proforma-page.component.html',
 
@@ -17,54 +17,49 @@ export class ProformaPageComponent  implements OnInit{
   }
   ngOnInit(): void {
    // te encargas de inicializar los get
-   this.getProducts();
-   this.getMedida();
-   this.getMarcas();
-
+   this.getTodo()
   }
 
   public products: product[] = []
   public marcas: marca[] = []
   public medidas: medida[] = []
-  public resultadoSearch :product[]=[]
+  public componente !:componenteforSearch;
 
-  getProducts(): void {
+  getProducts(): product[] {
     this.serve.getProducts().subscribe(
       products => {
         this.products = products
       }
     )
+    return this.products
   }
 
-  getMarcas(): void {
+  getMarcas(): marca[] {
     this.serve.getMarcas().subscribe(
       marcas => {
           this.marcas=marcas
       }
     )
+   return this.marcas
   }
-  getMedida(): void {
+  getMedida(): medida[] {
     this.serve.getMedida().subscribe(
       medidas => {
           this.medidas=medidas
       }
     )
+    return  this.medidas
   }
 
-  searchProduct(marcaSelect:string,medidaSelect:string,searchInput:string):void{
-   // aca te tienes que identificar de los dos indicadores
-   let resultado = this.products;
-   if (marcaSelect !== "0") {
-     resultado = resultado.filter((product) => product.Marca === marcaSelect);
-   }
-   if (medidaSelect !== "0") {
-     resultado = resultado.filter((product) => product.medida === medidaSelect);
-   }
-   if (searchInput !== '') {
-     resultado = resultado.filter(product => product.name.includes(searchInput));
-   }
-    this.resultadoSearch =resultado
+  getTodo():void{
+    this.componente ={
+      medidas:this.getMedida(),
+      marcas:this.getMarcas(),
+      productos:this.getProducts()
+    }
   }
+
+
 
 
 }
