@@ -1,0 +1,6 @@
+.div-a4 {
+  width: 794px;
+  height: 1123px;
+  border: 1px solid black; /* Opcional, solo para visualizar el contorno del div */
+  background-color: red;
+}

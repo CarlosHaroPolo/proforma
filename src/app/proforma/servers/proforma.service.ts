@@ -11,8 +11,12 @@ import { medida } from '../interface/medida.interface';
 
 export class ProformaService {
 
+  public ListProduct:product[]=[];
+
   constructor(private http: HttpClient) { }
 
+
+  public productSelectFinal :product[]=[];
 
   getProducts():Observable<product[]>{
     return this.http.get<product[]>('/json/products.json');
@@ -24,6 +28,11 @@ export class ProformaService {
 
   getMedida():Observable<medida[]>{
     return this.http.get<medida[]>('/json/medidas.json');
+  }
+
+  pushListProduct(product:product){
+   this.ListProduct.push(product)
+   console.log(this.ListProduct)
   }
 
 

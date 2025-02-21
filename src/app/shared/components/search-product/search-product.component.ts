@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { componenteforSearch } from '../../../proforma/interface/componente.interface';
 import { medida } from '../../../proforma/interface/medida.interface';
 import { marca } from '../../../proforma/interface/marca.interface';
@@ -15,9 +15,13 @@ import { product } from '../../../proforma/interface/product.interface';
 export class SearchProductComponent {
 
 
-
+ @Output()
+ aSelectedProduct:EventEmitter<product> = new EventEmitter();
   @Input()
   componentes!: componenteforSearch
 
+  recibirProductSelect(selectProduct:product){
+  this.aSelectedProduct.emit(selectProduct)
+  }
 
 }
